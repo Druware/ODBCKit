@@ -1,0 +1,15 @@
+ODBC Query Tool Todo List
+======================
+
+# High Priority
+* If multiple result sets exist, only display the last one.
+
+# Cosmetic
+
+* Improve syntax highlighting to handle comments
+* Add preferences dialog to support changing fonts.
+* If the connection changes, reset the schema and clear the query area
+
+# Nice to Have
+* expand schema view to include columns on drill down (indexes and keys would 
+  be nice)

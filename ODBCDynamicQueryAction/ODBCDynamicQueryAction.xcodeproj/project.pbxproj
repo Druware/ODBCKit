@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		435AEB3B192AE9E600CC1FCD /* ODBCColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 435AEB2F192AE9E600CC1FCD /* ODBCColumn.m */; };
+		435AEB3D192AE9E600CC1FCD /* ODBCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 435AEB31192AE9E600CC1FCD /* ODBCConnection.m */; };
+		435AEB3F192AE9E600CC1FCD /* ODBCField.m in Sources */ = {isa = PBXBuildFile; fileRef = 435AEB33192AE9E600CC1FCD /* ODBCField.m */; };
+		435AEB42192AE9E600CC1FCD /* ODBCRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 435AEB36192AE9E600CC1FCD /* ODBCRecord.m */; };
+		435AEB44192AE9E600CC1FCD /* ODBCRecordset.m in Sources */ = {isa = PBXBuildFile; fileRef = 435AEB38192AE9E600CC1FCD /* ODBCRecordset.m */; };
+		435AEB47192AEA6000CC1FCD /* libiodbc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 435AEB46192AEA6000CC1FCD /* libiodbc.dylib */; };
+		43EE9C510B419B4B003E48B6 /* odbc-tran60.png in Resources */ = {isa = PBXBuildFile; fileRef = 43EE9C500B419B4B003E48B6 /* odbc-tran60.png */; };
+		43FFD1B51BE3E32600AC518D /* ODBCKit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 43FFD1B41BE3E32600AC518D /* ODBCKit.icns */; };
+		650E79E2067AB5AE00B4A4EC /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 650E79E1067AB5AE00B4A4EC /* Automator.framework */; };
+		65181752067A8D39005BD953 /* ODBCDynamicQueryAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 65181750067A8D39005BD953 /* ODBCDynamicQueryAction.m */; };
+		65C50ADF067A987800FE4393 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 65C50ADD067A987800FE4393 /* main.nib */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* ODBCDynamicQueryAction_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCDynamicQueryAction_Prefix.pch; sourceTree = "<group>"; };
+		430438781BC6E5DA00CBD3F6 /* iodbcext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iodbcext.h; sourceTree = "<group>"; };
+		430438791BC6E5DA00CBD3F6 /* iodbcunix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iodbcunix.h; sourceTree = "<group>"; };
+		4304387A1BC6E5DA00CBD3F6 /* isql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isql.h; sourceTree = "<group>"; };
+		4304387B1BC6E5DA00CBD3F6 /* isqlext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isqlext.h; sourceTree = "<group>"; };
+		4304387C1BC6E5DA00CBD3F6 /* isqltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isqltypes.h; sourceTree = "<group>"; };
+		4304387D1BC6E5DA00CBD3F6 /* sql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql.h; sourceTree = "<group>"; };
+		4304387E1BC6E5DA00CBD3F6 /* sqlext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlext.h; sourceTree = "<group>"; };
+		4304387F1BC6E5DA00CBD3F6 /* sqltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqltypes.h; sourceTree = "<group>"; };
+		430438801BC6E5DA00CBD3F6 /* sqlucode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlucode.h; sourceTree = "<group>"; };
+		435AEB2D192AE9E600CC1FCD /* GenDBProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = GenDBProtocol.h; path = ../ODBCKit/GenDBProtocol.h; sourceTree = "<group>"; };
+		435AEB2E192AE9E600CC1FCD /* ODBCColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = ODBCColumn.h; path = ../ODBCKit/ODBCColumn.h; sourceTree = "<group>"; };
+		435AEB2F192AE9E600CC1FCD /* ODBCColumn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODBCColumn.m; path = ../ODBCKit/ODBCColumn.m; sourceTree = "<group>"; };
+		435AEB30192AE9E600CC1FCD /* ODBCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = ODBCConnection.h; path = ../ODBCKit/ODBCConnection.h; sourceTree = "<group>"; };
+		435AEB31192AE9E600CC1FCD /* ODBCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODBCConnection.m; path = ../ODBCKit/ODBCConnection.m; sourceTree = "<group>"; };
+		435AEB32192AE9E600CC1FCD /* ODBCField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = ODBCField.h; path = ../ODBCKit/ODBCField.h; sourceTree = "<group>"; };
+		435AEB33192AE9E600CC1FCD /* ODBCField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODBCField.m; path = ../ODBCKit/ODBCField.m; sourceTree = "<group>"; };
+		435AEB34192AE9E600CC1FCD /* ODBCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = ODBCKit.h; path = ../ODBCKit/ODBCKit.h; sourceTree = "<group>"; };
+		435AEB35192AE9E600CC1FCD /* ODBCRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = ODBCRecord.h; path = ../ODBCKit/ODBCRecord.h; sourceTree = "<group>"; };
+		435AEB36192AE9E600CC1FCD /* ODBCRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODBCRecord.m; path = ../ODBCKit/ODBCRecord.m; sourceTree = "<group>"; };
+		435AEB37192AE9E600CC1FCD /* ODBCRecordset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; name = ODBCRecordset.h; path = ../ODBCKit/ODBCRecordset.h; sourceTree = "<group>"; };
+		435AEB38192AE9E600CC1FCD /* ODBCRecordset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ODBCRecordset.m; path = ../ODBCKit/ODBCRecordset.m; sourceTree = "<group>"; };
+		435AEB46192AEA6000CC1FCD /* libiodbc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiodbc.dylib; path = usr/lib/libiodbc.dylib; sourceTree = SDKROOT; };
+		43EE9C500B419B4B003E48B6 /* odbc-tran60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "odbc-tran60.png"; sourceTree = "<group>"; };
+		43FFD1B41BE3E32600AC518D /* ODBCKit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ODBCKit.icns; sourceTree = "<group>"; };
+		43FFD1B71BE3E35000AC518D /* iodbcext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iodbcext.h; sourceTree = "<group>"; };
+		43FFD1B81BE3E35000AC518D /* iodbcunix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iodbcunix.h; sourceTree = "<group>"; };
+		43FFD1B91BE3E35000AC518D /* isql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isql.h; sourceTree = "<group>"; };
+		43FFD1BA1BE3E35000AC518D /* isqlext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isqlext.h; sourceTree = "<group>"; };
+		43FFD1BB1BE3E35000AC518D /* isqltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isqltypes.h; sourceTree = "<group>"; };
+		43FFD1BC1BE3E35000AC518D /* sql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql.h; sourceTree = "<group>"; };
+		43FFD1BD1BE3E35000AC518D /* sqlext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlext.h; sourceTree = "<group>"; };
+		43FFD1BE1BE3E35000AC518D /* sqltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqltypes.h; sourceTree = "<group>"; };
+		43FFD1BF1BE3E35000AC518D /* sqlucode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlucode.h; sourceTree = "<group>"; };
+		650E79E1067AB5AE00B4A4EC /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = /System/Library/Frameworks/Automator.framework; sourceTree = "<absolute>"; };
+		6518174F067A8D39005BD953 /* ODBCDynamicQueryAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCDynamicQueryAction.h; sourceTree = "<group>"; };
+		65181750067A8D39005BD953 /* ODBCDynamicQueryAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBCDynamicQueryAction.m; sourceTree = "<group>"; };
+		65C50ADE067A987800FE4393 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* ODBCDynamicQueryAction.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODBCDynamicQueryAction.action; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435AEB47192AEA6000CC1FCD /* libiodbc.dylib in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				650E79E2067AB5AE00B4A4EC /* Automator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* ODBCDynamicQueryAction */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = ODBCDynamicQueryAction;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43FFD1B41BE3E32600AC518D /* ODBCKit.icns */,
+				43EE9C500B419B4B003E48B6 /* odbc-tran60.png */,
+				65C50ADD067A987800FE4393 /* main.nib */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43FFD1B61BE3E35000AC518D /* iODBC-Include */,
+				43ACD8DE19243215007620DB /* ODBCKit */,
+				6518174F067A8D39005BD953 /* ODBCDynamicQueryAction.h */,
+				65181750067A8D39005BD953 /* ODBCDynamicQueryAction.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435AEB46192AEA6000CC1FCD /* libiodbc.dylib */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				650E79E1067AB5AE00B4A4EC /* Automator.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* ODBCDynamicQueryAction.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* ODBCDynamicQueryAction_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		430438771BC6E5DA00CBD3F6 /* iODBC-Include */ = {
+			isa = PBXGroup;
+			children = (
+				430438781BC6E5DA00CBD3F6 /* iodbcext.h */,
+				430438791BC6E5DA00CBD3F6 /* iodbcunix.h */,
+				4304387A1BC6E5DA00CBD3F6 /* isql.h */,
+				4304387B1BC6E5DA00CBD3F6 /* isqlext.h */,
+				4304387C1BC6E5DA00CBD3F6 /* isqltypes.h */,
+				4304387D1BC6E5DA00CBD3F6 /* sql.h */,
+				4304387E1BC6E5DA00CBD3F6 /* sqlext.h */,
+				4304387F1BC6E5DA00CBD3F6 /* sqltypes.h */,
+				430438801BC6E5DA00CBD3F6 /* sqlucode.h */,
+			);
+			name = "iODBC-Include";
+			path = "../ODBCKit/iODBC-Include";
+			sourceTree = "<group>";
+		};
+		43ACD8DE19243215007620DB /* ODBCKit */ = {
+			isa = PBXGroup;
+			children = (
+				430438771BC6E5DA00CBD3F6 /* iODBC-Include */,
+				435AEB2D192AE9E600CC1FCD /* GenDBProtocol.h */,
+				435AEB2E192AE9E600CC1FCD /* ODBCColumn.h */,
+				435AEB2F192AE9E600CC1FCD /* ODBCColumn.m */,
+				435AEB30192AE9E600CC1FCD /* ODBCConnection.h */,
+				435AEB31192AE9E600CC1FCD /* ODBCConnection.m */,
+				435AEB32192AE9E600CC1FCD /* ODBCField.h */,
+				435AEB33192AE9E600CC1FCD /* ODBCField.m */,
+				435AEB34192AE9E600CC1FCD /* ODBCKit.h */,
+				435AEB35192AE9E600CC1FCD /* ODBCRecord.h */,
+				435AEB36192AE9E600CC1FCD /* ODBCRecord.m */,
+				435AEB37192AE9E600CC1FCD /* ODBCRecordset.h */,
+				435AEB38192AE9E600CC1FCD /* ODBCRecordset.m */,
+			);
+			name = ODBCKit;
+			sourceTree = "<group>";
+		};
+		43FFD1B61BE3E35000AC518D /* iODBC-Include */ = {
+			isa = PBXGroup;
+			children = (
+				43FFD1B71BE3E35000AC518D /* iodbcext.h */,
+				43FFD1B81BE3E35000AC518D /* iodbcunix.h */,
+				43FFD1B91BE3E35000AC518D /* isql.h */,
+				43FFD1BA1BE3E35000AC518D /* isqlext.h */,
+				43FFD1BB1BE3E35000AC518D /* isqltypes.h */,
+				43FFD1BC1BE3E35000AC518D /* sql.h */,
+				43FFD1BD1BE3E35000AC518D /* sqlext.h */,
+				43FFD1BE1BE3E35000AC518D /* sqltypes.h */,
+				43FFD1BF1BE3E35000AC518D /* sqlucode.h */,
+			);
+			path = "iODBC-Include";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* ODBCDynamicQueryAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E59C33F08A97622001206A8 /* Build configuration list for PBXNativeTarget "ODBCDynamicQueryAction" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODBCDynamicQueryAction;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = ODBCDynamicQueryAction;
+			productReference = 8D5B49B6048680CD000E48DA /* ODBCDynamicQueryAction.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 4E59C34308A97622001206A8 /* Build configuration list for PBXProject "ODBCDynamicQueryAction" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* ODBCDynamicQueryAction */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* ODBCDynamicQueryAction */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				65C50ADF067A987800FE4393 /* main.nib in Resources */,
+				43EE9C510B419B4B003E48B6 /* odbc-tran60.png in Resources */,
+				43FFD1B51BE3E32600AC518D /* ODBCKit.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435AEB3B192AE9E600CC1FCD /* ODBCColumn.m in Sources */,
+				435AEB3F192AE9E600CC1FCD /* ODBCField.m in Sources */,
+				65181752067A8D39005BD953 /* ODBCDynamicQueryAction.m in Sources */,
+				435AEB44192AE9E600CC1FCD /* ODBCRecordset.m in Sources */,
+				435AEB3D192AE9E600CC1FCD /* ODBCConnection.m in Sources */,
+				435AEB42192AE9E600CC1FCD /* ODBCRecord.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65C50ADD067A987800FE4393 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65C50ADE067A987800FE4393 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E59C34008A97622001206A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODBCDynamicQueryAction_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.druware.Automator.ODBCDynamicQueryAction;
+				PRODUCT_NAME = ODBCDynamicQueryAction;
+				WRAPPER_EXTENSION = action;
+				ZERO_LINK = "";
+			};
+			name = Debug;
+		};
+		4E59C34108A97622001206A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = unsupported;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODBCDynamicQueryAction_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/opt/local/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				OTHER_OSAFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.druware.Automator.ODBCDynamicQueryAction;
+				PRODUCT_NAME = ODBCDynamicQueryAction;
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+		4E59C34408A97622001206A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4E59C34508A97622001206A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E59C33F08A97622001206A8 /* Build configuration list for PBXNativeTarget "ODBCDynamicQueryAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E59C34008A97622001206A8 /* Debug */,
+				4E59C34108A97622001206A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E59C34308A97622001206A8 /* Build configuration list for PBXProject "ODBCDynamicQueryAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E59C34408A97622001206A8 /* Debug */,
+				4E59C34508A97622001206A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

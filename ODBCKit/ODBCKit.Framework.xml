@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<framework name="ODBCKit.framework" version="0.4.2">
+	<classes>
+		<class name="ODBCColumn" file="ODBCColumn.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+		<class name="ODBCConnection" file="ODBCConnection.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+		<class name="ODBCField" file="ODBCConnection.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+		<class name="ODBCRecord" file="ODBCConnection.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+		<class name="ODBCRecordset" file="ODBCConnection.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+		<class name="ODBCLogin" file="ODBCConnection.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+		<class name="ODBCCommand" file="ODBCConnection.h">
+			<properties />
+			<methods />
+			<description />
+			<references />
+			<related_classes />
+		</class>
+	</classes>
+</framework>

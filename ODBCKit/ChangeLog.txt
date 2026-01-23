@@ -1,0 +1,173 @@
+Changelog
+=========
+# 01/07/2022
+    * Updated to support Apple Silicon
+
+# 10/29/2012
+    * consolidated GenDB definitions into a single file to remove duplicate 
+      definition warnings
+      
+# 07/17/2012
+    * defaultEncoding was not carrying forward to cloned connections
+    * reverted defaultEncoding to NSMacOSRoman as too many drivers still fail to
+      properly implement unicode support.   users that need UTF8 or other will 
+      need to set the defaultEncoding upon create.
+    * altered all child objects from the Connection to carry the defaultEncoding
+      through the init chain
+    
+# 06/21/2012
+    * updated version, fixed source to omit known broken preparedstatement code
+    
+
+# 09/20/2011
+    * Added connectionString (equates to DSN) to ODBCConnection for better 
+        support of the GenDB protocol
+
+# 09/17/2011
+    - updated to xcode 4.1 / Lion
+    - removed ODBCParameter and ODBCPreparedStatement from compile
+
+12/27/2010
+	- transitioned to GenDB Protocol implementation.
+	- added further HeaderDoc comments with a goal of moving entirely to 
+	  HeaderDoc style documentation
+	- adjusted copyrights to include 2011.
+
+11/29/2010
+	- removed references to ODBCPreparedStatement which is currently broken and 
+	  should not have been included.
+	  
+11/16/2010
+	- fixed a bug with unicode databases (MSSQL Server 2008) and char/varchar 
+	  datatypes truncating the result
+
+04/07/2010
+	- fixed a potential leak in ODBCLogin
+	- rebuilt with x86_64 support enabled to allow use with 64 bit drivers
+
+08/05/2009
+	- detailed check of possible object leaks, should prevent the occasional 
+	  reported issues of problems with extrememly large recordsets.
+	- added asString:(NSStringEncoding)encoding method
+	- altered record loading to better deal with TEXT / VARTEXT / VARBINARY
+	  data types.
+
+05/15/2009
+	- rebuilt with garbage collection enabled
+	
+11/15/2008
+	ODBCLogin 
+	- added new icon to the kit, changed the default login icon to the new icon.
+
+09/30/2008
+	ODBCRecordset
+    - resolved issue 2138425 (empty record in recordset)
+	
+09/18/2008
+	ODBCLogin
+	  - Added support for custom icon in the login panel, will alter the existing
+	    icon to something more professional when new artwork is available.
+		(void)setIcon:(NSImage)value; // icon size is 96x96 scaled proportionally.
+
+09/17/2008 
+  Wrapped up Psuedo Cursor support.  Will need to revisit testing for full 
+	cursor support when/if a driver is avaialable with full cursor support.  
+	
+09/09/2008
+  ODBCConnection & ODBCRecordset
+	- added enableCursors property to allow the user to enable cursors as needed.
+	  the default functionality is to work without them.  If this is enabled and
+	  the driver does not support them, the ODBCKit will attempt to fake it using
+	  an in memory implementation of the recordset.
+	- Cleaned up ALL warnings in build.
+  ODBCRecord & ODBCField
+	- need to alter both to preload and cache data values for the psuedoCursor
+	  handling.
+	
+09/08/2008
+  ODBCRecordset returns EXC_BAD_ACCESS on moveFirst;
+
+09/07/2008
+  ODBCConnection is inconsistant on connect with DSN
+	- fixed if() logic in connect to choose between SQLDRiverConnect and SQLConnect.
+  
+09/04/2008
+  ODBCConnection connect method fails to connect when DSN is Connection String
+	- altered connect to use SQLDriverConnect when DSN is Connection String
+	- added drivers array to store driver information
+	- Connection String doesn't translate Driver={Name} - Fixed, incorrect param on API call.
+
+10/30/2007
+  Leopard Issues
+	- Recordset Navigation fails - Started research
+	- altered back to using SQLFetch (FetchScroll has issues)
+
+01/11/2007
+  ODBCLogin
+  - fixed - [ 1633238 ] Login Panel does not close on Cancel
+    http://sourceforge.net/tracker/index.php?func=detail&aid=1633238&group_id=177561&atid=881726
+  ODBCRecordset
+  - fixed - [ 1633385 ] Update Queries hand Application
+	http://sourceforge.net/tracker/index.php?func=detail&aid=1633385&group_id=177561&atid=881726
+	
+11/28/2006
+  ODBCField
+  - Identified and fixed a bug where the PostgreSQL driver(s) would return a 
+    char * for a date that could not be initialised as an NSDate by the 
+	constructor
+
+11/17/2006
+  ODBCConnection / ODBCRecordset
+  - Isolated and killed a bug that was leaving connections flagged as 'open' in
+    the ODBC Driver, causing issues with the Actual drivers. 
+	
+11/13/2006
+  ODBCRecordset
+  - added dictionaryFromRecordset method to return an NSDictionary 
+    representation of the Recordset
+	
+11/09/2006
+  ODBCConnection
+  - added execCommandAsync & related helper functions
+  - added openAsync & related helper functions
+
+11/06/2006
+  ODBCConnection
+  - added connectAsync
+  ODBCLogin
+  - modified to use connectAsync
+
+11/01/2006
+  - added defaultUser and defaultPasswod to ODBCLogin.
+  - added datasourceFilter to ODBCConnection and ODBCLogin to allow the developer 
+    to have the datasources list filtered to those matching simple string match 
+	of the filter.
+  - identified an issue with the MSSQL driver and derived columns containing long
+    data, yet returning a size of 4.  Temporary workaround in the ODBCKit uses 
+	a hardcoded size of 1024 for all columns.
+
+10/28/2006
+  - added defaultDSN method to the ODBCLogin class to provide a way for the UI 
+    to default to a given DSN.  Default User and Password should also be added.
+
+10/03/2006
+  - reworked Column init to deal with quirks of different drivers when dealing with
+    timestamps and datetimes.
+
+09/19/2006
+  - commited code as per time to svn @ sourceforge.net
+  - changed Release configuration to Release - Shared (Library/Frameworks version)
+  - added new configuration: Release - Embedded (Embedded into an App Bundle version)
+
+09/15/2006
+  - added ODBCCommand object to handle prepared statements and BLOB inserts
+
+09/12/2006
+  ODBCRecordset
+  - added -(ODBCField *)fieldByIndex:(long)fieldIndex;
+  ODBCRecord
+  - added -(ODBCField *)fieldByIndex:(long)fieldIndex;
+
+09/11/2006
+  ODBCField
+  - added -(NSData *)asData; 

@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		432353A019A7FB7C00F9B61D /* iodbcext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323538E19A7FB5D00F9B61D /* iodbcext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A119A7FB7C00F9B61D /* iodbcunix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323538F19A7FB5D00F9B61D /* iodbcunix.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A219A7FB7C00F9B61D /* isql.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539019A7FB5D00F9B61D /* isql.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A319A7FB7C00F9B61D /* isqlext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539119A7FB5D00F9B61D /* isqlext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A419A7FB7C00F9B61D /* isqltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539219A7FB5D00F9B61D /* isqltypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A519A7FB7C00F9B61D /* sql.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539319A7FB5D00F9B61D /* sql.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A619A7FB7C00F9B61D /* sqlext.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539419A7FB5D00F9B61D /* sqlext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A719A7FB7C00F9B61D /* sqltypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539519A7FB5D00F9B61D /* sqltypes.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A819A7FB7C00F9B61D /* sqlucode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4323539619A7FB5D00F9B61D /* sqlucode.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		432353A919A8B10F00F9B61D /* GenDBProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 434B7916163F80B9001260B4 /* GenDBProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434E373B0A882404008E7086 /* ODBCColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E37310A882404008E7086 /* ODBCColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434E373C0A882404008E7086 /* ODBCColumn.m in Sources */ = {isa = PBXBuildFile; fileRef = 434E37320A882404008E7086 /* ODBCColumn.m */; };
+		434E373D0A882404008E7086 /* ODBCConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E37330A882404008E7086 /* ODBCConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434E373F0A882404008E7086 /* ODBCField.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E37350A882404008E7086 /* ODBCField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434E37400A882404008E7086 /* ODBCField.m in Sources */ = {isa = PBXBuildFile; fileRef = 434E37360A882404008E7086 /* ODBCField.m */; };
+		434E37410A882404008E7086 /* ODBCRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E37370A882404008E7086 /* ODBCRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434E37420A882404008E7086 /* ODBCRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 434E37380A882404008E7086 /* ODBCRecord.m */; };
+		434E37430A882404008E7086 /* ODBCRecordset.h in Headers */ = {isa = PBXBuildFile; fileRef = 434E37390A882404008E7086 /* ODBCRecordset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		434E37440A882404008E7086 /* ODBCRecordset.m in Sources */ = {isa = PBXBuildFile; fileRef = 434E373A0A882404008E7086 /* ODBCRecordset.m */; };
+		436536D30A86D3EF00D70E13 /* ODBCLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 436536D10A86D3EF00D70E13 /* ODBCLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436536D40A86D3EF00D70E13 /* ODBCLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 436536D20A86D3EF00D70E13 /* ODBCLogin.m */; };
+		436536D80A86D41700D70E13 /* ODBCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 436536D70A86D41700D70E13 /* ODBCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		436536F60A86D4BA00D70E13 /* ODBCLogin.nib in Resources */ = {isa = PBXBuildFile; fileRef = 436536F50A86D4BA00D70E13 /* ODBCLogin.nib */; };
+		436536F80A86D50500D70E13 /* odbc2.png in Resources */ = {isa = PBXBuildFile; fileRef = 436536F70A86D50500D70E13 /* odbc2.png */; };
+		43E891E90ECDC2A800BD7CCE /* ODBCKit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 43E891E80ECDC2A800BD7CCE /* ODBCKit.icns */; };
+		5590D50D1590DA5E0016C2B2 /* ODBCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 434E37340A882404008E7086 /* ODBCConnection.m */; };
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* ODBCKit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCKit_Prefix.pch; sourceTree = "<group>"; };
+		430A8A330ABB46ED0002492C /* ODBCPreparedStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCPreparedStatement.h; sourceTree = "<group>"; };
+		430A8A340ABB46ED0002492C /* ODBCPreparedStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBCPreparedStatement.m; sourceTree = "<group>"; };
+		4323538E19A7FB5D00F9B61D /* iodbcext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = iodbcext.h; sourceTree = "<group>"; };
+		4323538F19A7FB5D00F9B61D /* iodbcunix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = iodbcunix.h; sourceTree = "<group>"; };
+		4323539019A7FB5D00F9B61D /* isql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = isql.h; sourceTree = "<group>"; };
+		4323539119A7FB5D00F9B61D /* isqlext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = isqlext.h; sourceTree = "<group>"; };
+		4323539219A7FB5D00F9B61D /* isqltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = isqltypes.h; sourceTree = "<group>"; };
+		4323539319A7FB5D00F9B61D /* sql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = sql.h; sourceTree = "<group>"; };
+		4323539419A7FB5D00F9B61D /* sqlext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = sqlext.h; sourceTree = "<group>"; };
+		4323539519A7FB5D00F9B61D /* sqltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = sqltypes.h; sourceTree = "<group>"; };
+		4323539619A7FB5D00F9B61D /* sqlucode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = sqlucode.h; sourceTree = "<group>"; };
+		433621930AC223F300795C28 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		434B7916163F80B9001260B4 /* GenDBProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj; path = GenDBProtocol.h; sourceTree = "<group>"; };
+		434E37310A882404008E7086 /* ODBCColumn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ODBCColumn.h; sourceTree = "<group>"; };
+		434E37320A882404008E7086 /* ODBCColumn.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ODBCColumn.m; sourceTree = "<group>"; };
+		434E37330A882404008E7086 /* ODBCConnection.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ODBCConnection.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		434E37340A882404008E7086 /* ODBCConnection.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ODBCConnection.m; sourceTree = "<group>"; };
+		434E37350A882404008E7086 /* ODBCField.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ODBCField.h; sourceTree = "<group>"; };
+		434E37360A882404008E7086 /* ODBCField.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ODBCField.m; sourceTree = "<group>"; };
+		434E37370A882404008E7086 /* ODBCRecord.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ODBCRecord.h; sourceTree = "<group>"; };
+		434E37380A882404008E7086 /* ODBCRecord.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ODBCRecord.m; sourceTree = "<group>"; };
+		434E37390A882404008E7086 /* ODBCRecordset.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ODBCRecordset.h; sourceTree = "<group>"; };
+		434E373A0A882404008E7086 /* ODBCRecordset.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ODBCRecordset.m; sourceTree = "<group>"; };
+		4355059B2788937A00AF0F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		436536D10A86D3EF00D70E13 /* ODBCLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCLogin.h; sourceTree = "<group>"; };
+		436536D20A86D3EF00D70E13 /* ODBCLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ODBCLogin.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		436536D70A86D41700D70E13 /* ODBCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCKit.h; sourceTree = "<group>"; };
+		436536F50A86D4BA00D70E13 /* ODBCLogin.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ODBCLogin.nib; sourceTree = "<group>"; };
+		436536F70A86D50500D70E13 /* odbc2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = odbc2.png; sourceTree = "<group>"; };
+		43BF721714282A48009FA3A6 /* ODBCKit.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = ODBCKit.txt; path = Documentation/ODBCKit.txt; sourceTree = "<group>"; };
+		43C4B21F12C90E4E00A179FC /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
+		43E13171134D053100DF347B /* ODBCParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj; path = ODBCParameter.h; sourceTree = "<group>"; };
+		43E13172134D053100DF347B /* ODBCParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODBCParameter.m; sourceTree = "<group>"; };
+		43E5558D0AB75AD1001E9D56 /* ChangeLog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog.txt; sourceTree = "<group>"; };
+		43E891E80ECDC2A800BD7CCE /* ODBCKit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ODBCKit.icns; path = ../Art/ODBCKit/ODBCKit.icns; sourceTree = SOURCE_ROOT; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* ODBCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ODBCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43C4B21F12C90E4E00A179FC /* docs */,
+				8DC2EF5B0486A6940098B216 /* ODBCKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* ODBCKit */ = {
+			isa = PBXGroup;
+			children = (
+				43E5558D0AB75AD1001E9D56 /* ChangeLog.txt */,
+				433621930AC223F300795C28 /* LICENSE.txt */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				43BF721614282A14009FA3A6 /* Documentation */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = ODBCKit;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43E891E80ECDC2A800BD7CCE /* ODBCKit.icns */,
+				436536F50A86D4BA00D70E13 /* ODBCLogin.nib */,
+				436536F70A86D50500D70E13 /* odbc2.png */,
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4323538D19A7FB5D00F9B61D /* iODBC-Include */,
+				43EBCF8712BE6AE500015611 /* GenDB */,
+				436536D70A86D41700D70E13 /* ODBCKit.h */,
+				434E37310A882404008E7086 /* ODBCColumn.h */,
+				434E37320A882404008E7086 /* ODBCColumn.m */,
+				434E37330A882404008E7086 /* ODBCConnection.h */,
+				434E37340A882404008E7086 /* ODBCConnection.m */,
+				434E37350A882404008E7086 /* ODBCField.h */,
+				434E37360A882404008E7086 /* ODBCField.m */,
+				434E37370A882404008E7086 /* ODBCRecord.h */,
+				434E37380A882404008E7086 /* ODBCRecord.m */,
+				434E37390A882404008E7086 /* ODBCRecordset.h */,
+				434E373A0A882404008E7086 /* ODBCRecordset.m */,
+				436536D10A86D3EF00D70E13 /* ODBCLogin.h */,
+				436536D20A86D3EF00D70E13 /* ODBCLogin.m */,
+				430A8A330ABB46ED0002492C /* ODBCPreparedStatement.h */,
+				430A8A340ABB46ED0002492C /* ODBCPreparedStatement.m */,
+				43E13171134D053100DF347B /* ODBCParameter.h */,
+				43E13172134D053100DF347B /* ODBCParameter.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* ODBCKit_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4323538D19A7FB5D00F9B61D /* iODBC-Include */ = {
+			isa = PBXGroup;
+			children = (
+				4323538E19A7FB5D00F9B61D /* iodbcext.h */,
+				4323538F19A7FB5D00F9B61D /* iodbcunix.h */,
+				4323539019A7FB5D00F9B61D /* isql.h */,
+				4323539119A7FB5D00F9B61D /* isqlext.h */,
+				4323539219A7FB5D00F9B61D /* isqltypes.h */,
+				4323539319A7FB5D00F9B61D /* sql.h */,
+				4323539419A7FB5D00F9B61D /* sqlext.h */,
+				4323539519A7FB5D00F9B61D /* sqltypes.h */,
+				4323539619A7FB5D00F9B61D /* sqlucode.h */,
+			);
+			path = "iODBC-Include";
+			sourceTree = "<group>";
+		};
+		43BF721614282A14009FA3A6 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				43BF721714282A48009FA3A6 /* ODBCKit.txt */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		43EBCF8712BE6AE500015611 /* GenDB */ = {
+			isa = PBXGroup;
+			children = (
+				434B7916163F80B9001260B4 /* GenDBProtocol.h */,
+			);
+			name = GenDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432353A919A8B10F00F9B61D /* GenDBProtocol.h in Headers */,
+				436536D30A86D3EF00D70E13 /* ODBCLogin.h in Headers */,
+				436536D80A86D41700D70E13 /* ODBCKit.h in Headers */,
+				434E373B0A882404008E7086 /* ODBCColumn.h in Headers */,
+				434E373D0A882404008E7086 /* ODBCConnection.h in Headers */,
+				434E373F0A882404008E7086 /* ODBCField.h in Headers */,
+				434E37410A882404008E7086 /* ODBCRecord.h in Headers */,
+				434E37430A882404008E7086 /* ODBCRecordset.h in Headers */,
+				432353A019A7FB7C00F9B61D /* iodbcext.h in Headers */,
+				432353A119A7FB7C00F9B61D /* iodbcunix.h in Headers */,
+				432353A219A7FB7C00F9B61D /* isql.h in Headers */,
+				432353A319A7FB7C00F9B61D /* isqlext.h in Headers */,
+				432353A419A7FB7C00F9B61D /* isqltypes.h in Headers */,
+				432353A519A7FB7C00F9B61D /* sql.h in Headers */,
+				432353A619A7FB7C00F9B61D /* sqlext.h in Headers */,
+				432353A719A7FB7C00F9B61D /* sqltypes.h in Headers */,
+				432353A819A7FB7C00F9B61D /* sqlucode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* ODBCKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "ODBCKit" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODBCKit;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = ODBCKit;
+			productReference = 8DC2EF5B0486A6940098B216 /* ODBCKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8DC2EF4F0486A6940098B216 = {
+						DevelopmentTeam = Z44257Z59V;
+					};
+				};
+			};
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ODBCKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				ja,
+				de,
+				en,
+				fr,
+				Base,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* ODBCKit */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* ODBCKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+				436536F60A86D4BA00D70E13 /* ODBCLogin.nib in Resources */,
+				436536F80A86D50500D70E13 /* odbc2.png in Resources */,
+				43E891E90ECDC2A800BD7CCE /* ODBCKit.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436536D40A86D3EF00D70E13 /* ODBCLogin.m in Sources */,
+				434E373C0A882404008E7086 /* ODBCColumn.m in Sources */,
+				434E37400A882404008E7086 /* ODBCField.m in Sources */,
+				434E37420A882404008E7086 /* ODBCRecord.m in Sources */,
+				434E37440A882404008E7086 /* ODBCRecordset.m in Sources */,
+				5590D50D1590DA5E0016C2B2 /* ODBCConnection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4355059B2788937A00AF0F2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODBCKit_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/iODBC-Include\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@rpath/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				OTHER_LDFLAGS = "-liodbc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.druware.odbckit;
+				PRODUCT_NAME = ODBCKit;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4336215A0AC20F0600795C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODBCKit_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/iODBC-Include\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@rpath/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				OTHER_LDFLAGS = "-liodbc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.druware.odbckit;
+				PRODUCT_NAME = ODBCKit;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4336215B0AC20F0600795C28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		434E4E451058441900099993 /* Release (10.4) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = 4.0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = "Release (10.4)";
+		};
+		434E4E461058441900099993 /* Release (10.4) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ODBCKit_Prefix.pch;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/iODBC-Include\"",
+				);
+				INFOPLIST_FILE = Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				OTHER_LDFLAGS = "-liodbc";
+				PRODUCT_BUNDLE_IDENTIFIER = com.druware.odbckit;
+				PRODUCT_NAME = ODBCKit;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = framework;
+				ZERO_LINK = NO;
+			};
+			name = "Release (10.4)";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "ODBCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				4336215A0AC20F0600795C28 /* Release */,
+				434E4E461058441900099993 /* Release (10.4) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "ODBCKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				4336215B0AC20F0600795C28 /* Release */,
+				434E4E451058441900099993 /* Release (10.4) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

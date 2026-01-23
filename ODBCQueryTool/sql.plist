@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>intervalTypes</key>
+	<array>
+		<string>day</string>
+		<string>day to hour</string>
+		<string>day to minute</string>
+		<string>day to second</string>
+		<string>hour</string>
+		<string>hour to minute</string>
+		<string>hour to second</string>
+		<string>minute</string>
+		<string>minute to second</string>
+		<string>month</string>
+		<string>second</string>
+		<string>year</string>
+		<string>year to month</string>
+	</array>
+	<key>baseDataTypes</key>
+	<array>
+		<string>varying</string>
+		<string>bit</string>
+		<string>character</string>
+		<string>date</string>
+		<string>time</string>
+		<string>timestamp</string>
+		<string>decimal</string>
+		<string>float</string>
+		<string>integer</string>
+		<string>interval</string>
+		<string>numeric</string>
+		<string>real</string>
+		<string>smallint</string>
+	</array>
+	<key>keywords</key>
+	<array>
+		<string>select</string>
+		<string>from</string>
+		<string>where</string>
+		<string>order</string>
+		<string>group</string>
+		<string>by</string>
+		<string>asc</string>
+		<string>desc</string>
+		<string>insert</string>
+		<string>into</string>
+		<string>update</string>
+		<string>set</string>
+		<string>delete</string>
+		<string>drop</string>
+		<string>create</string>
+		<string>alter</string>
+		<string>table</string>
+		<string>procedure</string>
+		<string>view</string>
+		<string>trigger</string>
+		<string>function</string>
+		<string>values</string>
+		<string>as</string>
+		<string>and</string>
+		<string>or</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,87 @@
+01/18/2015
+  - Converted to ARC
+  - removed Automator Actions into seperate project
+
+07/19/2012
+  - altered login process to more gracefully display connection errors rather 
+    than treat them as cancelled connections.
+  - removed bogus 'status' from the status bar prior to connection
+
+06/16/2012
+  - added query timers to the status bar in the Query Tool.
+  - fixed a bug in ODBCLogin that prevented errors from being passed up to the
+    GUI. This is useful for trapping bad DSNs, which otherwise failed with a 
+    "Connection cancelled." with no futher information.
+  - The login change required minor changes in MyDocument to catch these errors and
+    present them in a nice format. Also note the change in the onConnection
+    call to handle the new state, "connection exists but isn't working".
+  - changed a number of references to initWithCString to stringWithFormat, as the
+    former is deprecated.
+  - added ODBCConnection.database to return the current "catalog" (database).
+  - updated MyDocument.onExecuteQuery to call ODBCConnection.database and look
+    for changes in the "current catalog". if it changes, the SchemaDataSource
+    is re-set to update the schema display (on the left) and mention the change
+    in the status display at the bottom of the document window.
+  - added ODBCConnection.readOnly which returns whether or not the connection
+    is to a read-only data source. You can still send updates to such a beast,
+    but they simply won't do anything. This code is currently unused, but potentially
+    useful.
+  - various fixes for different drivers. PD versions of MySQL, Firebird and SQLite
+    are known to work.
+  - fixed a number of ODBA calls that were passing in bad handles
+  - changed error messages to a consistant format, proper camel casing throughout,
+    periods on errors from the UI and no periods from errors from lower levels
+  - change release to drain on autorelease pools in ODBCConnection
+  - lots of whitespace and minor formatting, more internal documentation
+    (but not enough).
+
+11/17/2010
+  - changed result view to adjust column widths the the length of the fields as
+    returned instead of an assumed default size.
+  - fixed a bug in the title when the file has not been saved
+  - fixed 'save results as' to properly display the save panel and choose a 
+    proper path for the save file.
+	https://sourceforge.net/tracker/index.php?func=detail&aid=1655295&group_id=177561&atid=881729
+  - started ressearch into long standing edit bug that can lock up the editor 
+	when editing the 0,0 char in the text view eafter they have been entered 
+	once.
+  - fixed a bug where the last column in the results window would be squished to
+    8 pixels wide.
+  - found and fixed initial issue with highlighting that caused edits at the 
+    start of any line to cause a random editor hang.
+  - bumped version number to 0.5.0 in prep for a weekend release.
+  
+11/16/2010
+  - added dsn name to window title.
+    https://sourceforge.net/tracker/index.php?func=detail&aid=2417506&group_id=177561&atid=881729
+
+05/21/2010
+  - started syntax highlighting rework to better handle sql syntax styles also 
+    abstract enough that it could be used in other sql tools in the system.
+
+04/28/2009
+  - merged Connect/Disconnect button into a single button
+  - roughed in export results functionality
+
+03/12/2009
+  - resolved long standing bug with schema browser to enable it to display
+  - began code cleanup geared towards building a stand alone product for use 
+    against ODBC datasources.
+
+11/13/2008
+  - query input now scrolls right to left correctly
+  - initial support for schema browser added.
+
+01/11/2007
+  - fixed - [ 1633238 ] Login Panel does not close on Cancel
+    http://sourceforge.net/tracker/index.php?func=detail&aid=1633238&group_id=177561&atid=881726
+11/10/2006
+  - odbckit-Bugs-1594272 - Fixed 
+	https://sourceforge.net/tracker/?func=detail&atid=881726&aid=1594272&group_id=177561
+  - completed async query exec
+11/09/2006
+  - stubbed in async query execution for testing ODBCKit changes
+11/02/2006
+  - turned on unified toolbar look.
+10/27/2006
+  - started move to asynchronous connections

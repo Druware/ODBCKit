@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430390F8192C340E00C7B43D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430390F7192C340E00C7B43D /* Images.xcassets */; };
+		430A8A010ABAFDFF0002492C /* sql-doc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 430A89FE0ABAFDFF0002492C /* sql-doc.icns */; };
+		430A8A020ABAFDFF0002492C /* run_script_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 430A89FF0ABAFDFF0002492C /* run_script_32.png */; };
+		430A8A030ABAFDFF0002492C /* disconnect_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 430A8A000ABAFDFF0002492C /* disconnect_32.png */; };
+		4325A4A80AF3ECAD00E5848F /* ChangeLog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4325A4A70AF3ECAD00E5848F /* ChangeLog.txt */; };
+		433AD7B60AC8A8E40029740D /* EditorDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433AD7AD0AC8A76B0029740D /* EditorDelegate.m */; };
+		435142610B08E0DA00B25C7E /* sinfo_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 435142600B08E0DA00B25C7E /* sinfo_16.png */; };
+		4352BF320F697A0F00CCE524 /* SchemaElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4352BF310F697A0F00CCE524 /* SchemaElement.m */; };
+		436538050A86DD6F00D70E13 /* ODBCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436538040A86DD6F00D70E13 /* ODBCKit.framework */; };
+		436D2377195CFFCD004AE225 /* ODBCKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 431646400ADDDAB700DD5B83 /* ODBCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		438DF63A0AE7D7AD00D487E7 /* query-tool.icns in Resources */ = {isa = PBXBuildFile; fileRef = 438DF6380AE7D7AD00D487E7 /* query-tool.icns */; };
+		438DF63B0AE7D7AD00D487E7 /* query-tool.png in Resources */ = {isa = PBXBuildFile; fileRef = 438DF6390AE7D7AD00D487E7 /* query-tool.png */; };
+		43B6492E129715CD0011FB1F /* sql.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43B6492D129715CD0011FB1F /* sql.plist */; };
+		43BF720A1427AA76009FA3A6 /* TODO.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43BF72091427AA76009FA3A6 /* TODO.txt */; };
+		43E554580AB743AB001E9D56 /* connect_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 43E554570AB743AB001E9D56 /* connect_32.png */; };
+		43E554920AB7482C001E9D56 /* MyDocumentToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E554910AB7482C001E9D56 /* MyDocumentToolbar.m */; };
+		43E555060AB75504001E9D56 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E555050AB75504001E9D56 /* DataSource.m */; };
+		43E555B60AB7607D001E9D56 /* MyDocumentMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E555B50AB7607D001E9D56 /* MyDocumentMenu.m */; };
+		43E891E70ECDC25500BD7CCE /* ODBCKit.icns in Resources */ = {isa = PBXBuildFile; fileRef = 43E891E60ECDC25500BD7CCE /* ODBCKit.icns */; };
+		43E892920ECDE5D700BD7CCE /* SchemaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E892910ECDE5D700BD7CCE /* SchemaDataSource.m */; };
+		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
+		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
+		8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
+		8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165FFE840EACC02AAC07 /* InfoPlist.strings */; };
+		8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4316463F0ADDDAB700DD5B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4316463B0ADDDAB700DD5B83 /* ODBCKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = ODBCKit;
+		};
+		431646460ADDDACD00DD5B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4316463B0ADDDAB700DD5B83 /* ODBCKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = ODBCKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		433A36C80CDB785F00BB6BC6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				436D2377195CFFCD004AE225 /* ODBCKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		436D2384195D00A2004AE225 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/Automator;
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
+		2A37F4B0FDCFA73011CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		32DBCF750370BD2300C91783 /* ODBCQueryTool_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODBCQueryTool_Prefix.pch; sourceTree = "<group>"; };
+		430390F7192C340E00C7B43D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Query Tool for ODBC/Images.xcassets"; sourceTree = "<group>"; };
+		430A89FE0ABAFDFF0002492C /* sql-doc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "sql-doc.icns"; sourceTree = "<group>"; };
+		430A89FF0ABAFDFF0002492C /* run_script_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = run_script_32.png; sourceTree = "<group>"; };
+		430A8A000ABAFDFF0002492C /* disconnect_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = disconnect_32.png; sourceTree = "<group>"; };
+		4316463B0ADDDAB700DD5B83 /* ODBCKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ODBCKit.xcodeproj; path = ../ODBCKit/ODBCKit.xcodeproj; sourceTree = SOURCE_ROOT; };
+		4325A4A70AF3ECAD00E5848F /* ChangeLog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog.txt; sourceTree = "<group>"; };
+		433AD7AC0AC8A76B0029740D /* EditorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorDelegate.h; sourceTree = "<group>"; };
+		433AD7AD0AC8A76B0029740D /* EditorDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorDelegate.m; sourceTree = "<group>"; };
+		435142600B08E0DA00B25C7E /* sinfo_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sinfo_16.png; sourceTree = "<group>"; };
+		4352BF300F697A0F00CCE524 /* SchemaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemaElement.h; sourceTree = "<group>"; };
+		4352BF310F697A0F00CCE524 /* SchemaElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchemaElement.m; sourceTree = "<group>"; };
+		4355059E27889CBD00AF0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MainMenu.nib; sourceTree = "<group>"; };
+		4355059F27889CBD00AF0F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = Base; path = Base.lproj/MyDocument.nib; sourceTree = "<group>"; };
+		435505A027889CC500AF0F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		435505A127889CC500AF0F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		436538040A86DD6F00D70E13 /* ODBCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ODBCKit.framework; path = /Library/Frameworks/ODBCKit.framework; sourceTree = "<absolute>"; };
+		438DF6380AE7D7AD00D487E7 /* query-tool.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "query-tool.icns"; sourceTree = "<group>"; };
+		438DF6390AE7D7AD00D487E7 /* query-tool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "query-tool.png"; sourceTree = "<group>"; };
+		43B6492D129715CD0011FB1F /* sql.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sql.plist; sourceTree = "<group>"; };
+		43BF72091427AA76009FA3A6 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		43E554570AB743AB001E9D56 /* connect_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connect_32.png; sourceTree = "<group>"; };
+		43E554900AB7482C001E9D56 /* MyDocumentToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocumentToolbar.h; sourceTree = "<group>"; };
+		43E554910AB7482C001E9D56 /* MyDocumentToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocumentToolbar.m; sourceTree = "<group>"; };
+		43E555040AB75504001E9D56 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
+		43E555050AB75504001E9D56 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
+		43E555B40AB7607D001E9D56 /* MyDocumentMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDocumentMenu.h; sourceTree = "<group>"; };
+		43E555B50AB7607D001E9D56 /* MyDocumentMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDocumentMenu.m; sourceTree = "<group>"; };
+		43E891B20ECCE48900BD7CCE /* MyOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOutlineView.h; sourceTree = "<group>"; };
+		43E891B30ECCE48900BD7CCE /* MyOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOutlineView.m; sourceTree = "<group>"; };
+		43E891E60ECDC25500BD7CCE /* ODBCKit.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ODBCKit.icns; path = ../Art/ODBCKit/ODBCKit.icns; sourceTree = SOURCE_ROOT; };
+		43E892900ECDE5D700BD7CCE /* SchemaDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemaDataSource.h; sourceTree = "<group>"; };
+		43E892910ECDE5D700BD7CCE /* SchemaDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchemaDataSource.m; sourceTree = "<group>"; };
+		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* ODBCQueryTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODBCQueryTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				436538050A86DD6F00D70E13 /* ODBCKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* ODBCQueryTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* ODBCQueryTool */ = {
+			isa = PBXGroup;
+			children = (
+				4316463B0ADDDAB700DD5B83 /* ODBCKit.xcodeproj */,
+				43BF72091427AA76009FA3A6 /* TODO.txt */,
+				4325A4A70AF3ECAD00E5848F /* ChangeLog.txt */,
+				2A37F4ABFDCFA73011CA2CEA /* Classes */,
+				2A37F4AFFDCFA73011CA2CEA /* Other Sources */,
+				2A37F4B8FDCFA73011CA2CEA /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = ODBCQueryTool;
+			sourceTree = "<group>";
+		};
+		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				43E555040AB75504001E9D56 /* DataSource.h */,
+				43E555050AB75504001E9D56 /* DataSource.m */,
+				433AD7AC0AC8A76B0029740D /* EditorDelegate.h */,
+				433AD7AD0AC8A76B0029740D /* EditorDelegate.m */,
+				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
+				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+				43E554900AB7482C001E9D56 /* MyDocumentToolbar.h */,
+				43E554910AB7482C001E9D56 /* MyDocumentToolbar.m */,
+				43E555B40AB7607D001E9D56 /* MyDocumentMenu.h */,
+				43E555B50AB7607D001E9D56 /* MyDocumentMenu.m */,
+				43E891B20ECCE48900BD7CCE /* MyOutlineView.h */,
+				43E891B30ECCE48900BD7CCE /* MyOutlineView.m */,
+				43E892900ECDE5D700BD7CCE /* SchemaDataSource.h */,
+				43E892910ECDE5D700BD7CCE /* SchemaDataSource.m */,
+				4352BF300F697A0F00CCE524 /* SchemaElement.h */,
+				4352BF310F697A0F00CCE524 /* SchemaElement.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A37F4AFFDCFA73011CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF750370BD2300C91783 /* ODBCQueryTool_Prefix.pch */,
+				2A37F4B0FDCFA73011CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2A37F4B8FDCFA73011CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				430390F7192C340E00C7B43D /* Images.xcassets */,
+				43B6492D129715CD0011FB1F /* sql.plist */,
+				43E891E60ECDC25500BD7CCE /* ODBCKit.icns */,
+				435142600B08E0DA00B25C7E /* sinfo_16.png */,
+				438DF6380AE7D7AD00D487E7 /* query-tool.icns */,
+				438DF6390AE7D7AD00D487E7 /* query-tool.png */,
+				430A89FE0ABAFDFF0002492C /* sql-doc.icns */,
+				430A89FF0ABAFDFF0002492C /* run_script_32.png */,
+				430A8A000ABAFDFF0002492C /* disconnect_32.png */,
+				2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */,
+				2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */,
+				2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */,
+				8D15AC360486D014006FF6A4 /* Info.plist */,
+				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				43E554570AB743AB001E9D56 /* connect_32.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				436538040A86DD6F00D70E13 /* ODBCKit.framework */,
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4316463C0ADDDAB700DD5B83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				431646400ADDDAB700DD5B83 /* ODBCKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* Query Tool for ODBC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Query Tool for ODBC" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+				433A36C80CDB785F00BB6BC6 /* CopyFiles */,
+				436D2384195D00A2004AE225 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				431646470ADDDACD00DD5B83 /* PBXTargetDependency */,
+			);
+			name = "Query Tool for ODBC";
+			productInstallPath = "$(HOME)/Applications";
+			productName = ODBCQueryTool;
+			productReference = 8D15AC370486D014006FF6A4 /* ODBCQueryTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8D15AC270486D014006FF6A4 = {
+						DevelopmentTeam = Z44257Z59V;
+					};
+				};
+			};
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "ODBCQueryTool" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				de,
+				ja,
+				Base,
+				fr,
+				en,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* ODBCQueryTool */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4316463C0ADDDAB700DD5B83 /* Products */;
+					ProjectRef = 4316463B0ADDDAB700DD5B83 /* ODBCKit.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* Query Tool for ODBC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		431646400ADDDAB700DD5B83 /* ODBCKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ODBCKit.framework;
+			remoteRef = 4316463F0ADDDAB700DD5B83 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */,
+				430390F8192C340E00C7B43D /* Images.xcassets in Resources */,
+				8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */,
+				8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */,
+				8D15AC2F0486D014006FF6A4 /* InfoPlist.strings in Resources */,
+				43E554580AB743AB001E9D56 /* connect_32.png in Resources */,
+				430A8A010ABAFDFF0002492C /* sql-doc.icns in Resources */,
+				430A8A020ABAFDFF0002492C /* run_script_32.png in Resources */,
+				430A8A030ABAFDFF0002492C /* disconnect_32.png in Resources */,
+				438DF63A0AE7D7AD00D487E7 /* query-tool.icns in Resources */,
+				438DF63B0AE7D7AD00D487E7 /* query-tool.png in Resources */,
+				4325A4A80AF3ECAD00E5848F /* ChangeLog.txt in Resources */,
+				435142610B08E0DA00B25C7E /* sinfo_16.png in Resources */,
+				43E891E70ECDC25500BD7CCE /* ODBCKit.icns in Resources */,
+				43B6492E129715CD0011FB1F /* sql.plist in Resources */,
+				43BF720A1427AA76009FA3A6 /* TODO.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC310486D014006FF6A4 /* MyDocument.m in Sources */,
+				8D15AC320486D014006FF6A4 /* main.m in Sources */,
+				43E554920AB7482C001E9D56 /* MyDocumentToolbar.m in Sources */,
+				43E555060AB75504001E9D56 /* DataSource.m in Sources */,
+				43E555B60AB7607D001E9D56 /* MyDocumentMenu.m in Sources */,
+				433AD7B60AC8A8E40029740D /* EditorDelegate.m in Sources */,
+				43E892920ECDE5D700BD7CCE /* SchemaDataSource.m in Sources */,
+				4352BF320F697A0F00CCE524 /* SchemaElement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		431646470ADDDACD00DD5B83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ODBCKit;
+			targetProxy = 431646460ADDDACD00DD5B83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165FFE840EACC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				435505A127889CC500AF0F2E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4355059F27889CBD00AF0F2E /* Base */,
+			);
+			name = MyDocument.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4355059E27889CBD00AF0F2E /* Base */,
+			);
+			name = MainMenu.nib;
+			sourceTree = "<group>";
+		};
+		2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				435505A027889CC500AF0F2E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../ODBCKit/build/Release\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_1)",
+					/opt/local/include,
+				);
+				HEADER_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../ODBCKit\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.druwaresoftwaredesigns.ODBCQueryTool;
+				PRODUCT_NAME = ODBCQueryTool;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../ODBCKit/build/Release\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(HEADER_SEARCH_PATHS_QUOTED_1)",
+					/opt/local/include,
+				);
+				HEADER_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)/../ODBCKit\"";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.druwaresoftwaredesigns.ODBCQueryTool;
+				PRODUCT_NAME = ODBCQueryTool;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "Query Tool for ODBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "ODBCQueryTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}

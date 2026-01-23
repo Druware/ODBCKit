@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IBClasses</key>
+	<array>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>onConnect</key>
+				<string>id</string>
+				<key>onDisconnect</key>
+				<string>id</string>
+				<key>onExecuteQuery</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>FirstResponder</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>SUPERCLASS</key>
+			<string>NSObject</string>
+		</dict>
+		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>onConnect</key>
+				<string>id</string>
+				<key>onExecuteQuery</key>
+				<string>id</string>
+				<key>onExportResults</key>
+				<string>id</string>
+			</dict>
+			<key>CLASS</key>
+			<string>MyDocument</string>
+			<key>LANGUAGE</key>
+			<string>ObjC</string>
+			<key>OUTLETS</key>
+			<dict>
+				<key>documentWindow</key>
+				<string>NSWindow</string>
+				<key>infoImage</key>
+				<string>NSImageView</string>
+				<key>query</key>
+				<string>NSTextView</string>
+				<key>resultsTable</key>
+				<string>NSTableView</string>
+				<key>schemaSourceList</key>
+				<string>NSOutlineView</string>
+				<key>scrollview</key>
+				<string>NSScrollView</string>
+				<key>status</key>
+				<string>NSTextField</string>
+				<key>working</key>
+				<string>NSProgressIndicator</string>
+			</dict>
+			<key>SUPERCLASS</key>
+			<string>NSDocument</string>
+		</dict>
+	</array>
+	<key>IBVersion</key>
+	<string>1</string>
+</dict>
+</plist>
