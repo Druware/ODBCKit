@@ -19,7 +19,7 @@
  *
  *  Note that the only valid version of the LGPL license as far as this
  *  project is concerned is the original GNU Library General Public License
- *  Version 2, dated June 1991.
+ *  Version 2, dated June 1991.README.
  *
  *  While not mandated by the BSD license, any patches you make to the
  *  iODBC source code may be contributed back into the iODBC project

@@ -170,7 +170,7 @@ typedef SQLLEN			SQLROWOFFSET;
 /*
  *  Generic pointer types
  */
-typedef void *              	PTR;
+typedef void *          PTR;
 typedef void *			SQLHANDLE;
 
 
