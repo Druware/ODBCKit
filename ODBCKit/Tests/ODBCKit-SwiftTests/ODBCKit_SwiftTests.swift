@@ -153,3 +153,39 @@ import Testing
     connection.close()
     #expect(connection.isConnected == false)
 }
+
+@Test func testODBCDriversList() async throws {
+    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    let connection = ODBCConnection()
+    #expect(connection.isEnvironmentValid)
+    Swift.print(connection.lastError ?? "No Error")
+    
+    // set the parameters
+    connection.connectionString = "TrusteeSQLDB"
+    #expect(connection.connectionString == "TrusteeSQLDB")
+    connection.userName = "sa"
+    #expect(connection.userName == "sa")
+    connection.password = "Just4Dev@"
+    #expect(connection.password == "Just4Dev@")
+    
+    // try the connection
+    #expect(await connection.connectAsync())
+    Swift.print(connection.lastError ?? "No Error")
+    
+    // try the sql
+    let createCount = connection.execCommand("create table execCommandTest ( id varchar(10) null )")
+    #expect (createCount == -1)
+    let insertCount = connection.execCommand("insert into execCommandTest ( id ) values ( 'testing' )")
+    #expect (insertCount == 1)
+    let rs = connection.open("select * from execCommandTest")
+    #expect (rs != nil)
+    _ = rs?.moveFirst()
+    #expect(rs?.fieldByIndex(0)?.asString() == "testing")
+    
+    let dropCount = connection.execCommand("drop table execCommandTest")
+    #expect (dropCount == -1)
+    
+    // close the connection
+    connection.close()
+    #expect(connection.isConnected == false)
+}

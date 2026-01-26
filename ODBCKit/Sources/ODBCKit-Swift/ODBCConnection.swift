@@ -735,6 +735,8 @@ public final class ODBCConnection : @unchecked Sendable /*: GenDBConnection*/ {
         }
     }
     
+    // TODO: Add Support for Connection String usage
+    
     public func open(_ sql: String) -> ODBCRecordset? {
         // get teh statement handle
         state = .busy
@@ -784,49 +786,9 @@ public final class ODBCConnection : @unchecked Sendable /*: GenDBConnection*/ {
         return recordset
     }
 
-    /*
     
-    // FIXED: MSM 15-Jun-12: this method is used to open a statement session with
-    //         the driver, which is normally part of a query process. the name is a
-    //         little confusing, because it appears to imply it's "opening a
-    //         connection" when its actually "run a query".
-    //        DRU 17-Jul-12: this is a legacy of the origin and intended audience.
-    //         both the JDBC and the various OO Layers on ODBC in the Windows world
-    //         adopted the Open/ExecCommand naming.  For familiarity to developers
-    //         coming from that background, this naming was retained.
-    - (ODBCRecordset *)open:(NSString *)sql
-    {
-        SQLINTEGER cbRowArraySize = 1;
-                
-        // tell the statement to return rows one at a time
-        // FIXED: MSM 15-Jun-12: this formerly failed to set nResult, but that might
-        //        have been deliberate as the test above might pass through to this point
-        // FIXED: MSM 18-Jun-12: changed this call on the advice of the SQLite ODBC
-        //        author... appears to fix a problem in that DB anyway.
-        nResult = SQLSetStmtAttr(hstmt, SQL_ROWSET_SIZE, (SQLINTEGER)cbRowArraySize, (SQLINTEGER)NULL);
-        if ((nResult != SQL_SUCCESS) && (nResult != SQL_SUCCESS_WITH_INFO)) {
-               [self logError:nResult forStatement:hstmt];
-            return nil;
-        }
-        
-        // initialize the ODBCRecordset with the results of the query
-        ODBCRecordset *rs = [[ODBCRecordset alloc] initWithConnection:henv
-                                                           forDatabase:hdbc
-                                                         withStatement:hstmt
-                                                         enableCursors:enableCursors
-                                                         usingEncoding:defaultEncoding];
-        
-        // if cursors are enabled, use SQLMoreResults() until we have ALL of the
-        // the results (stored in an array of ODBCRecordSets()).
-        // if cursors are not enabled, only fetch, only retain the last recordset.
-        
-        
-        return rs;
-    } */
+    // MARK: - System Queries
     
-
-    
-    // MARK: - Schema Queries
     public func datasources() -> [String] {
         var results: [String] = []
         let nameBuffer = UnsafeMutablePointer<CChar>.allocate(capacity: SQL_MAX_DSN_LENGTH + 1)
