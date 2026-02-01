@@ -1,0 +1,6 @@
+module iodbc [system] {
+    header "/usr/include/sql.h"
+    header "/usr/include/sqlext.h"
+    link "iodbc"
+    export *
+}

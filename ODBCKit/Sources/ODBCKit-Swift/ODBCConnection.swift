@@ -375,23 +375,52 @@ public final class ODBCConnection : @unchecked Sendable /*: GenDBConnection*/ {
         
         // now we try to establish the connection
         
-        let dsnString = connectionString ?? ""
-        let userNameString = userName ?? ""
-        let passwordString = password ?? ""
+        if (connectionString == nil) {
+            lastError = "Connection String cannot be nil"
+            state = .disconnected
+            return false
+        }
         
-        let connectResult = dsnString.withCString { dsnPtr in
-            userNameString.withCString { userPtr in
-                passwordString.withCString { passPtr in
-                    SQLConnect(connectionHandle,
-                              UnsafeRawPointer(dsnPtr).assumingMemoryBound(to: SQLCHAR.self),
-                              SQLSMALLINT(dsnString.utf8.count),
-                              UnsafeRawPointer(userPtr).assumingMemoryBound(to: SQLCHAR.self),
-                              SQLSMALLINT(userNameString.utf8.count),
-                              UnsafeRawPointer(passPtr).assumingMemoryBound(to: SQLCHAR.self),
-                              SQLSMALLINT(passwordString.utf8.count))
+        var connectResult : SQLRETURN = SQL_ERROR
+        
+        if (connectionString!.contains("river="))
+        {
+            var iBufLen: SQLSMALLINT = 1024
+            var outConnectionString: [CChar] = [CChar](repeating: 0, count: 1024)
+            var connectionBytes = Array(connectionString!.utf8CString)
+            connectResult = connectionBytes.withUnsafeMutableBufferPointer { buffer in
+                buffer.baseAddress!.withMemoryRebound(to: SQLCHAR.self, capacity: buffer.count) { sqlcharPtr in
+                    SQLDriverConnect(
+                        connectionHandle!,
+                        nil,
+                        sqlcharPtr,
+                        SQLSMALLINT(connectionString!.utf8.count),
+                        &outConnectionString,
+                        iBufLen,
+                        &iBufLen,
+                        SQLUSMALLINT(SQL_DRIVER_NOPROMPT))
+                }
+            }
+        } else {
+            let dsnString = connectionString ?? ""
+            let userNameString = userName ?? ""
+            let passwordString = password ?? ""
+            
+            connectResult = dsnString.withCString { dsnPtr in
+                userNameString.withCString { userPtr in
+                    passwordString.withCString { passPtr in
+                        SQLConnect(connectionHandle,
+                                   UnsafeRawPointer(dsnPtr).assumingMemoryBound(to: SQLCHAR.self),
+                                   SQLSMALLINT(dsnString.utf8.count),
+                                   UnsafeRawPointer(userPtr).assumingMemoryBound(to: SQLCHAR.self),
+                                   SQLSMALLINT(userNameString.utf8.count),
+                                   UnsafeRawPointer(passPtr).assumingMemoryBound(to: SQLCHAR.self),
+                                   SQLSMALLINT(passwordString.utf8.count))
+                    }
                 }
             }
         }
+        
         if (connectResult != SQL_SUCCESS && connectResult != SQL_SUCCESS_WITH_INFO) {
             lastError = handleError(type: SQL_HANDLE_DBC, handle: connectionHandle!)
             state = .disconnected
@@ -789,36 +818,7 @@ public final class ODBCConnection : @unchecked Sendable /*: GenDBConnection*/ {
     
     // MARK: - System Queries
     
-    public func datasources() -> [String] {
-        var results: [String] = []
-        let nameBuffer = UnsafeMutablePointer<CChar>.allocate(capacity: SQL_MAX_DSN_LENGTH + 1)
-        let descBuffer = UnsafeMutablePointer<CChar>.allocate(capacity: SQL_MAX_MESSAGE_LENGTH + 1)
-        var nameLength: SQLSMALLINT = 0
-        var descLength: SQLSMALLINT = 0
-        
-        var fetchResult = SQLDataSources(self.environmentHandle,
-                                         SQL_FETCH_FIRST,
-                                         nameBuffer,
-                                         SQLSMALLINT(SQL_MAX_DSN_LENGTH),
-                                         &nameLength,
-                                         descBuffer,
-                                         SQLSMALLINT(SQL_MAX_MESSAGE_LENGTH),
-                                         &descLength)
-        
-        while fetchResult == SQL_SUCCESS || fetchResult == SQL_SUCCESS_WITH_INFO {
-            let name = String(utf8String: nameBuffer)
-            results.append(name ?? "")
-            fetchResult = SQLDataSources(self.environmentHandle,
-                                         SQL_FETCH_NEXT,
-                                         nameBuffer,
-                                         SQLSMALLINT(SQL_MAX_DSN_LENGTH),
-                                         &nameLength,
-                                         descBuffer,
-                                         SQLSMALLINT(SQL_MAX_MESSAGE_LENGTH),
-                                         &descLength)        }
-        
-        return results
-    }
+
+    
+
 }
-
-

@@ -66,6 +66,30 @@ func SQLDescribeCol(
     _ nullablePtr: UnsafeMutablePointer<Int16>?
 ) -> Int16
 
+@_silgen_name("SQLDriverConnect")
+public func SQLDriverConnect(
+    _ connectionHandle: SQLHDBC,
+    _ windowHandle: SQLHWND?,
+    _ inConnectionString: UnsafeMutablePointer<SQLCHAR>?,
+    _ stringLength1: SQLSMALLINT,
+    _ outConnectionString: UnsafeMutablePointer<CChar>?,
+    _ bufferLength: SQLSMALLINT,
+    _ stringLength2Ptr: UnsafeMutablePointer<SQLSMALLINT>?,
+    _ driverCompletion: SQLUSMALLINT
+) -> SQLRETURN
+
+@_silgen_name("SQLDrivers")
+func SQLDrivers(
+  _ EnvironmentHandle: SQLHENV,
+  _ Direction: SQLUSMALLINT,
+  _ DriverDescription: UnsafeMutablePointer<SQLCHAR>?,
+  _ BufferLength1: SQLSMALLINT,
+  _ StringLength1Ptr: UnsafeMutablePointer<SQLSMALLINT>?,
+  _ DriverAttributes: UnsafeMutablePointer<SQLCHAR>?,
+  _ BufferLength2: SQLSMALLINT,
+  _ StringLength2Ptr: UnsafeMutablePointer<SQLSMALLINT>?
+) -> SQLRETURN
+
 @_silgen_name("SQLExecDirect")
 internal func SQLExecDirect(
     _ statementHandle: SQLHANDLE?,
