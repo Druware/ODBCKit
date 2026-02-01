@@ -1,0 +1,24 @@
+{
+  "originHash" : "80bf7f1be89602bb3b6d4901f2aa4cba30145e20a542be22c8bf9ee469dbe81d",
+  "pins" : [
+    {
+      "identity" : "odbckit-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Druware/ODBCKit-Swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f9936b7de9864b9704251a7ed2329e1bb6627ec3"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
+        "version" : "1.7.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -7,7 +7,6 @@ let package = Package(
     name: "ODBCKit-Swift",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
-
         .library(
             name: "ODBCKit-Swift",
             targets: ["ODBCKit-Swift"]

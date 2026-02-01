@@ -304,9 +304,6 @@ public class ODBCRecordset {
         isOpen = false
     }
     
-    
-
-    
     func movePrevious() -> ODBCRecord? {
         if !cursorsEnabled {
             lastError = "Only forward reading allowed"
